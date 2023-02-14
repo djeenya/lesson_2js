@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>task6</title>
+</head>
+
+<body>
+   <h2>Task6</h2>
+   <p>Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті)
+      використовуючи елементи розмітки</p>
+   <script>
+      let number = parseInt(prompt(`Введіть кількість першого товару`))
+      //Ціна до першого товару
+      let price = parseFloat(prompt(`Введіть ціну першого товару`))
+      let number2 = parseInt(prompt(`Введіть кількість другого товару`))
+      //Ціна до другого товару
+      let price2 = parseFloat(prompt(`Введіть ціну другого товару`))
+      let number3 = parseInt(prompt(`Введіть кількість третього товару`))
+      //Ціна до третього товару
+      let price3 = parseFloat(prompt(`Введіть ціну третього товару`))
+
+      let resultFirstPrice = number * price
+      let resultSecondPrice = number2 * price2
+      let resultThreePrice = number3 * price3
+
+      let resultEnd = resultFirstPrice + resultSecondPrice + resultThreePrice
+      //  одиниця обраного товару х ціна товару - загальна вартість одного товару
+      document.write(
+         `
+         Товар №1<br>
+         ${number} x ${price} - <span> ${resultFirstPrice.toFixed(1)} </span><br>
+         Товар №2<br>
+         ${number2} x ${price2} - <span> ${resultSecondPrice.toFixed(1)} </span><br>
+         Товар №3<br>
+         ${number3} x ${price3} - <span> ${resultThreePrice.toFixed(1)} </span><br>
+         <span>--------------------------------</span><br>
+         Загалом до оплати - ${resultEnd}
+         `
+      )
+   </script>
+</body>
+
+</html>

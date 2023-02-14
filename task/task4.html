@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>task4</title>
+</head>
+
+<body>
+   <h2>task4</h2>
+   <p>Дано довжину у сантиметрах.Визначити скільки це метрів і кілометрів</p>
+   <script>
+      const METER = 0.01
+      const KILOMETR = 1e-5
+      let centimeters = parseFloat(prompt('Введіть довжину у сантиметрах'))
+      /* Перевіряв як буде працювати таким чином
+      // Довжина одного сантиметра в метрі 0.01
+      m = 0.01
+      //Довжина одного сантимерта в кілометрі 1е-5
+      km = 1e-5
+      */
+      let meters = centimeters * METER
+      let kilometer = centimeters * KILOMETR
+      document.write(
+         `
+         Ваша довжина в  сантиметрах ${centimeters} дорівнює <br>
+         В метрах = ${meters}<br>
+         в километрах = ${kilometer.toFixed(3)} 
+         `
+      )
+
+   </script>
+</body>
+
+</html>

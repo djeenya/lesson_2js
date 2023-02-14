@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>task3</title>
+</head>
+
+<body>
+   <h2>Task_3</h2>
+   <p>Знайти загальну вартість та ПДВ(5% від загальної вартості)</p>
+   <script>
+      const PROCENT_VAT = 5
+      let unit = parseFloat(prompt(`Введіть кількість одиниць товару`))
+      let price = parseFloat(prompt(`Введіть кількість вартість товарів`))
+
+      let inGemeral = unit * price
+      let vat = inGemeral / 100
+      let resultProcentVat = vat * PROCENT_VAT
+      document.write(
+         `
+         Вартість товару ${inGemeral}, ПДВ ${resultProcentVat}
+         `
+      )
+
+   </script>
+</body>
+
+</html>
